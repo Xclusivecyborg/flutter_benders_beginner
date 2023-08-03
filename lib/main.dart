@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_benders_beginner/data_modelling_class/todo_view.dart';
+import 'package:flutter_benders_beginner/state_management/inherited_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TodoView(),
+      home: const InheritedWidgetExample(),
     );
   }
 }
