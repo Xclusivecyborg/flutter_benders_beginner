@@ -41,6 +41,12 @@ class _AnimatedALignExampleState extends State<AnimatedALignExample>
   }
 
   @override
+  void dispose() {
+    timer?.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
